@@ -1,10 +1,10 @@
 import { ExperienceCard } from "./ExperienceCard.jsx"
 
-export function Experience () {
+export function Experience ({experienceData}) {
     return (
-        <section>
-            <h3>Experience</h3>
-            <ExperienceCard />
+        <section className="experience-container">
+            <h3>E X P E R I E N C E</h3>
+            <ExperienceCard experienceData={experienceData}/>
         </section>
     )
 }

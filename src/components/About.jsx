@@ -1,7 +1,7 @@
 export function About () {
     return (
-        <section>
-            <h3>About</h3>
+        <section className="about-section">
+            <h3>A B O U T</h3>
             <p>
                 Full-stack software engineer with 7+ years building production web applications used by millions. I specialize in TypeScript, React, and Node.js, with a track record of shipping accessible, performant interfaces and scalable backend services. I care about measurable outcomes: faster load times, fewer defects, and happier users.
             </p>
