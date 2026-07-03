@@ -1,0 +1,4 @@
+.footerContainer {
+    border-top: 1px solid oklch(0.93 0.02 250 / 12%);
+    padding: 24px;
+}
