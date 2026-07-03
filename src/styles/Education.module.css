@@ -1,0 +1,22 @@
+.educationContainer {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    text-align: left;
+    padding: 24px;
+
+    & .educationCollege {
+
+        & .educationCard {
+            margin-top: 12px;    
+        }
+    }
+}
+
+.educationDate {
+    font-size: 14px;
+}
+            
+.educationCollegeName {
+    color: oklch(0.70 0.02 250);
+}
