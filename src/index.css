@@ -20,14 +20,13 @@
 
 
 body {
+  width: 100%;
   margin: 0;
   line-height: 1.625;
 }
 
 #root {
   color-scheme: dark;
-  width: 1126px;
-  max-width: 100%;
   margin: 0 auto;
   text-align: center;
   border-inline: 1px solid var(--border);

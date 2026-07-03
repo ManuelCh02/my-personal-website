@@ -1,0 +1,23 @@
+.projectSectionContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 12px;
+    padding: 24px;
+
+    & .techContainer {
+        margin-top: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        list-style: none;
+
+        & li {
+            padding: 4px 16px;
+            background: #2b2b2b;
+            color: #fff;
+            border-radius: 24px;
+            border: var(--border);
+        }
+    }
+}
