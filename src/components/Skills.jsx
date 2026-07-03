@@ -1,42 +1,40 @@
+import style from "../styles/Skills.module.css"
+
 export function Skills () {
     return (
-        <section>
-            <h3>SKILLS</h3>
+        <section className={style.skillsContainer}>
+            <h3>S K I L L S</h3>
             <div>
-                <h4>LANGUAGES</h4>
-                <ul>
-                    <li>TypeScript</li>
+                <h4 className={style.skillsTitle}>LANGUAGES</h4>
+                <ul className={style.techContainer}>
                     <li>JavaScript</li>
-                    <li>Python</li>
-                    <li>SQL</li>
-                    <li>Go</li>
+                    <li>HTML</li>
+                    <li>css</li>
                 </ul>
             </div>
             <div>
-                <h4>FRONTEND</h4>
-                <ul>
-                    <li>React</li>
-                    <li>Next.js</li>
-                    <li>Tailwind CSS</li>
-                    <li>Testing Library</li>
+                <h4 className={style.skillsTitle}>FRONTEND</h4>
+                <ul className={style.techContainer}>
+                    <li>React.js</li>
                 </ul>
             </div>
             <div>
-                <h4>BACKEND</h4>
-                <ul>
+                <h4 className={style.skillsTitle}>BACKEND</h4>
+                <ul className={style.techContainer}>
                     <li>Node.js</li>
-                    <li>GraphQL</li>
-                    <li>REST</li>
-                    <li>PostgreSQL</li>
+                    <li>Express.js</li>
                 </ul>
             </div>
-            <div>
+            
+            {
+            /* Will be added soon ;) */
+            /* <div>
                 <h4>CLOUD & TOOLING</h4>
                 <ul>
                     <li>AWS</li>
                     <li>Docker</li>
                 </ul>
-            </div>
+            </div> */}
         </section>
     )
 }
