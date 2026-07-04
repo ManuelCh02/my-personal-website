@@ -126,3 +126,36 @@ a {
     }
   }
 }
+
+@media (min-width: 768px) {
+  #root {
+    padding: 36px;
+  }
+
+  .experience-container {
+
+    & .experienceCardContainer {
+      
+      & .experience-data {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+
+        & .experience-data-date {
+          width: 60%;
+          font-size: 12px;    
+        }
+
+        & .experience-data-infoContainer {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+
+          & ul {
+            padding-left: 16px;
+          }
+        } 
+      }
+    }
+  }
+}
