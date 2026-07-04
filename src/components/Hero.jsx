@@ -4,8 +4,8 @@ export function Hero () {
     return (
         <header className={style.heroContainer}>
             <h1>Manuel Chingay</h1>
-            <h2>Frontend Software Engineer</h2>
-            <p className="muted-text">I build reliable, accessible, and fast web applications.</p>
+            <h2>Desarrollador de Software</h2>
+            <p className="muted-text">Creo aplicaciones web confiables, accesibles y rápidas.</p>
         </header>
     )
 }

@@ -5,7 +5,7 @@ export function Skills () {
         <section className={style.skillsContainer} id="skills">
             <h3>S K I L L S</h3>
             <div>
-                <h4 className={style.skillsTitle}>LANGUAGES</h4>
+                <h4 className={style.skillsTitle}>LENGUAJES</h4>
                 <ul className={style.techContainer}>
                     <li>JavaScript</li>
                     <li>HTML</li>

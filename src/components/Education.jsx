@@ -4,9 +4,9 @@ export function Education () {
     return (
         <section className={style.educationContainer} id="education">
             <div className={style.educationCollege}>
-                <h3>E D U C A T I O N</h3>
+                <h3>E D U C A C I Ó N</h3>
                 <div className={style.educationCard}>
-                    <span className={style.educationDate}>2020 - PRESENT</span>
+                    <span className={style.educationDate}>2020 - ACTUALIDAD</span>
                     <div>
                         <h4>Tecnología en Desarrollo de Software</h4>
                         <span className={style.educationCollegeName}>Universidad Nacional abierta y a distancia</span>

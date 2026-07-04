@@ -8,23 +8,33 @@ import './App.css'
 function App() {
   const experienceData = [
     {
-      startDate: 2022,
-      endDate: 'PRESENT',
-      title: 'Senior Software Engineer · Northwind Cloud',
-      type: 'Remote',
-      description: 'Lead front-end engineer on the developer platform team, owning the component library and core dashboard.',
+      startDate: 2021,
+      endDate: 'Actualidad',
+      title: 'Asesor Comercial',
+      type: 'Remoto',
+      description: 'Responsable de la gestión comercial, prospección de clientes y consultoría técnica para la venda de equipos industriales eléctricos. Encargado del ciclo completo de ventas.',
       goals: [
-        'Reduced dashboard load time by 48% (4.1s → 2.1s) by code-splitting and migrating to React Server Components.',
-        'Shipped a design system adopted by 9 teams, cutting UI bug reports by 35% quarter over quarter.',
-        'Mentored 4 engineers; 2 were promoted within 12 months.'
+        'Gestión y optimización de la propescción y cotización a clientes',
+        'Negociación exitosa de contratos comerciales de alto valor bajo modalidades de pago (50/50) mitigando riesgos financieros.',
+        'Automatización del ciclo de ventas mediante la implementación de herramientas digitales',
       ],
       technologies: [
-        'TypeScript',
-        'React',
-        'Next.js',
-        'Node.js',
-        'PostgreSQL',
-        'AWS'
+        
+      ]  
+    },
+    {
+      startDate: 'Marzo 2025',
+      endDate: 'Abril 2025',
+      title: 'Desarrollador web Freelance',
+      type: 'Remoto',
+      description: 'Desarrollé un sitio web corporativo gestionando el ciclo de desarrollo desde el diseño y estructura hasta el proceso técnico completo configurando hosting, dominio e emails corporativos.',
+      goals: [
+        
+      ],
+      technologies: [
+        'WordPress',
+        'HTML',
+        'CSS'
       ]  
     }
   ]
