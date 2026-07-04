@@ -158,4 +158,9 @@ a {
       }
     }
   }
+
+  .skills-education-container {
+    display: flex;
+    justify-content: space-between;
+  }
 }

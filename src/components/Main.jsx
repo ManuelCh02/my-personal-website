@@ -10,8 +10,10 @@ export function Main ({experienceData}) {
             <About />
             <Experience experienceData={experienceData}/>
             <Projects />
-            <Skills />
-            <Education />
+            <div className="skills-education-container">
+                <Skills />
+                <Education />
+            </div>      
         </main>
     )
 }
