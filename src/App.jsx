@@ -1,5 +1,6 @@
 import { Hero } from './components/Hero.jsx'
 import { SocialMedia } from './components/SocialMedia.jsx'
+import { PageNavigation } from './components/PageNavigation.jsx'
 import { Main } from './components/Main.jsx'
 import { Footer } from './components/Footer.jsx'
 import './App.css'
@@ -30,12 +31,17 @@ function App() {
  
 
   return (
-    <>
-      <Hero />
-      <SocialMedia />
-      <Main experienceData={experienceData}/>
-      <Footer />
-    </>
+    <div className="app-container">
+      <div className="app-hero">
+        <Hero />
+        <PageNavigation /> 
+        <SocialMedia />
+      </div>
+      <div className="app-main">
+        <Main experienceData={experienceData}/>
+        <Footer />
+      </div>
+    </div>
   )
 }
 

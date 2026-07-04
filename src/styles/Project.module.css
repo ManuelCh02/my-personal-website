@@ -21,3 +21,35 @@
         }
     }
 }
+
+@media (min-width: 992px) {
+    li {
+        list-style: none;
+    }
+
+    .projectSectionContainer {
+        padding: 0;
+        margin-top: 48px;
+    }
+
+    .projectTitle {
+        padding-left: 18px;
+    }
+
+    .projectCardContainer {
+        display: flex;
+        flex-direction: column;
+        padding: 18px;
+        border-radius: 8px;
+
+        & h4 {
+            font-weight: 700;
+        }
+    }
+
+    .projectCardContainer:hover {
+        background: oklch(0.25 0.03 256);
+        border: 1px solid oklch(0.93 0.02 250 / 12%);
+        transition: 0.3s;
+    }
+}

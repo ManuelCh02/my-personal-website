@@ -26,3 +26,10 @@
         }
     }
 }
+
+@media (min-width: 992px) {
+    .skillsContainer {
+        margin-top: 48px;
+        padding: 0 0 0 18px;
+    }
+}

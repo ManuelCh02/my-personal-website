@@ -87,6 +87,10 @@ a {
   }
 }
 
+.pageNavigationContainer {
+  display: none;
+}
+
 .about-section {
   padding: 24px;
   text-align: left;
@@ -132,6 +136,10 @@ a {
     padding: 36px;
   }
 
+  .pageNavigationContainer {
+    display: none;
+  }
+
   .experience-container {
 
     & .experienceCardContainer {
@@ -162,5 +170,49 @@ a {
   .skills-education-container {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+@media (min-width: 992px) {
+  #root {
+    padding: 0;
+  }
+
+  .about-section {
+    margin-top: 48px;
+    padding: 0 0 0 18px;
+  }
+
+  .experience-container {
+    margin-top: 48px;
+    padding: 0 0 0 18px;
+  }
+
+  .app-container {
+    display: flex;
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+
+    & .app-hero {
+      width: 50%;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
+    }
+
+    & .app-main {
+      width: 50%;
+    }
+  }
+
+  .pageNavigationContainer {
+    display: block;
+  }
+
+  .skills-education-container {
+    display: flex;
+    flex-direction: column;
   }
 }
