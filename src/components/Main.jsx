@@ -4,12 +4,12 @@ import { Projects } from "./Projects.jsx"
 import { Skills } from "./Skills.jsx"
 import { Education } from "./Education.jsx"
 
-export function Main ({experienceData}) {
+export function Main ({experienceData, projectsData}) {
     return (
         <main>
             <About />
             <Experience experienceData={experienceData}/>
-            <Projects />
+            <Projects projectsData={projectsData}/>
             <div className="skills-education-container">
                 <Skills />
                 <Education />

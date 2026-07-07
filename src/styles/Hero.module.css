@@ -1,11 +1,12 @@
 .heroContainer {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 8px;
     padding: 24px;
     text-align: left;
 
     & h1 {
+        line-height: normal;
         font-size: 54px;
     }
 

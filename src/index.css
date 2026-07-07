@@ -52,6 +52,7 @@ h2, h3 {
 p, li {
   font-size: 16px;
   font-weight: 400;
+  text-wrap: pretty;
 }
 
 a {
@@ -98,6 +99,11 @@ a {
   flex-direction: column;
   gap: 16px;
 
+  & .about-title-section {
+    display: flex;
+    gap: 16px;
+  }
+
   & p {
     color: var(--muted-foreground);
     line-height: 1.625;
@@ -111,22 +117,36 @@ a {
   padding: 24px;
   text-align: left;
 
-  & .experience-data {
+  & .experienceCardContainer {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 36px;
 
-    & .goal-container {
-      padding-left: 48px;
-      color: var(--muted-foreground);
+    & .experience-data {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
 
-      & li {
-        font-size: 16px;
+      & .experience-data-date {
+        font-size: 14px;
       }
-    }
 
-    & .experience-type, p {
-      color: var(--muted-foreground);
+      & .goal-container {
+        padding-left: 48px;
+        color: var(--muted-foreground);
+
+        & li {
+          font-size: 16px;
+        }
+      }
+
+      .tech-container {
+        margin-top: 12px;
+      }
+
+      & .experience-type, p {
+        color: var(--muted-foreground);
+      }
     }
   }
 }

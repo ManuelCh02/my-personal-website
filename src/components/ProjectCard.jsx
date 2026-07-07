@@ -1,24 +1,32 @@
 import style from "../styles/Project.module.css"
 
-export function ProjectCard () {
+export function ProjectCard ({projectsData}) {
     return (
         <div>
             <ul>
-                <li>
-                    <a 
-                        href="https://manuelch02.github.io/movie-website/"
-                        target="about_blank"
-                        className={style.projectCardContainer}>
-                        <h4>Movie Website</h4>
-                        <p>Aplicación web responsive que permite a los usuarios explorar, buscar y marcar películas como favoritas mediante la API de The Movie Database (TMDb). El proyecto incorpora patrones de interfaz de usuario, carga básica, transiciones de vista y guardado persistente de favoritos mediante localStorage.</p>
-                        <ul className={style.techContainer}>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>HTTP</li>
-                        </ul>
-                    </a>
-                </li>
+                {
+                    projectsData.map(project => 
+                        <li key={project.id}>
+                            <a 
+                                href={project.githubLink}
+                                target="about_blank"
+                                className={style.projectCardContainer}
+                            >
+                                <h4>{project.title}</h4>
+                                <p>{project.description}</p>
+                                <ul 
+                                    className={style.techContainer}
+                                >
+                                    {
+                                        project.technologies.map(tech =>
+                                            <li>{tech}</li>
+                                        )
+                                    }
+                                </ul>
+                            </a>
+                        </li>
+                    )
+                }
             </ul>
         </div>
     )

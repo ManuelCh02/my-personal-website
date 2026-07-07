@@ -22,6 +22,10 @@
     }
 }
 
+ul {
+    list-style: none;
+}
+
 @media (min-width: 992px) {
     li {
         list-style: none;

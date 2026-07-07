@@ -38,6 +38,16 @@ function App() {
       ]  
     }
   ]
+
+  const projectsData = [
+    {
+      id: 1,
+      githubLink: "https://manuelch02.github.io/movie-website/",
+      title: "Movie Website",
+      description: "Aplicación web responsive que permite a los usuarios explorar, buscar y marcar películas como favoritas mediante la API de The Movie Database (TMDb). El proyecto incorpora patrones de interfaz de usuario, carga básica, transiciones de vista y guardado persistente de favoritos mediante localStorage.",
+      technologies: ["HTML", "CSS", "JavaScript", "HTTP", "API"]
+    }
+  ]
  
 
   return (
@@ -48,7 +58,10 @@ function App() {
         <SocialMedia />
       </div>
       <div className="app-main">
-        <Main experienceData={experienceData}/>
+        <Main 
+          experienceData={experienceData}
+          projectsData={projectsData}  
+        />
         <Footer />
       </div>
     </div>
