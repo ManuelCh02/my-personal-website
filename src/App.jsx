@@ -8,6 +8,7 @@ import './App.css'
 function App() {
   const experienceData = [
     {
+      id: 1,
       startDate: 2021,
       endDate: 'Actualidad',
       title: 'Asesor Comercial',
@@ -23,6 +24,7 @@ function App() {
       ]  
     },
     {
+      id: 2,
       startDate: 'Marzo 2025',
       endDate: 'Abril 2025',
       title: 'Desarrollador web Freelance',
