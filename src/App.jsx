@@ -50,7 +50,6 @@ function App() {
       technologies: ["HTML", "CSS", "JavaScript", "HTTP", "API"]
     }
   ]
- 
 
   return (
     <div className="app-container">
