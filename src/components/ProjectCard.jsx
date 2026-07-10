@@ -9,7 +9,8 @@ export function ProjectCard ({projectsData}) {
                         <li key={project.id}>
                             <a 
                                 href={project.githubLink}
-                                target="about_blank"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className={style.projectCardContainer}
                             >
                                 <h4>{project.title}</h4>
@@ -19,7 +20,7 @@ export function ProjectCard ({projectsData}) {
                                 >
                                     {
                                         project.technologies.map(tech =>
-                                            <li>{tech}</li>
+                                            <li key={tech}>{tech}</li>
                                         )
                                     }
                                 </ul>
