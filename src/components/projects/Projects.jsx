@@ -1,5 +1,5 @@
 import { ProjectList } from "./ProjectList.jsx"
-import style from "../styles/Project.module.css"
+import style from "./Projects.module.css"
 
 export function Projects ({projectsData}) {
     return (

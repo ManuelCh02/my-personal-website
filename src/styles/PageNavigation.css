@@ -49,3 +49,7 @@
 .pageNavigationList li a:hover .transition {
   width: 3rem;
 }
+
+.link-nav {
+  scroll-behavior: smooth;
+}
