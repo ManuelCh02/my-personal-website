@@ -1,6 +1,6 @@
 import { About } from "./About.jsx"
-import { Experience } from "./Experience.jsx"
-import { Projects } from "./Projects.jsx"
+import { Experience } from "./experiences/Experience.jsx"
+import { Projects } from "./projects/Projects.jsx"
 import { Skills } from "./Skills.jsx"
 import { Education } from "./Education.jsx"
 

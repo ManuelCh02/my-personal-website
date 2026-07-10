@@ -18,6 +18,9 @@
   --ring: oklch(0.82 0.12 180);
 }
 
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   width: 100%;
