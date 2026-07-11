@@ -82,15 +82,6 @@ a {
   }
 }
 
-.social-mediaContainer {
-  padding: 24px;
-
-  & .mediaIcon-list {
-    display: flex;
-    gap: 16px;
-  }
-}
-
 .pageNavigationContainer {
   display: none;
 }
