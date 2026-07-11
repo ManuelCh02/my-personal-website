@@ -1,39 +1,45 @@
 import "../styles/PageNavigation.css"
 
+const navLinks = [
+  {
+    id: "aboutLink",
+    href: "#about",
+    label: "Sobre Mí"
+  },
+  {
+    id: "experienceLink",
+    href: "#experience",
+    label: "Experiencia"
+  },
+  {
+    id: "projectsLink",
+    href: "#projects",
+    label: "Proyectos"
+  },
+  {
+    id: "skillsLink",
+    href: "#skills",
+    label: "Skills"
+  },
+  {
+    id: "educationLink",
+    href: "#education",
+    label: "Educación"
+  }
+]
+
 export function PageNavigation () {
     return (
         <nav className="pageNavigationContainer">
           <ul className="pageNavigationList">
-            <li>
-              <a href="#about" className="link-nav">
-                <span className="transition"></span>
-                <span>Sobre Mí</span>
-              </a>
-            </li>
-            <li>
-              <a href="#experience" className="link-nav">
-                <span className="transition"></span>
-                <span>Experiencia</span>
-              </a>
-            </li>
-            <li>
-              <a href="#projects" className="link-nav">
-                <span className="transition"></span>
-                <span>Proyectos</span>
-              </a>
-            </li>
-            <li>
-              <a href="#skills" className="link-nav">
-                <span className="transition"></span>
-                <span>Skills</span>
-              </a>
-            </li>
-            <li>
-              <a href="#education" className="link-nav">
-                <span className="transition"></span>
-                <span>Educatión</span>
-              </a>
-            </li>
+            {navLinks.map(link =>
+              <li key={link.id}>
+                <a href={link.href} className="link-nav">
+                  <span className="transition"></span>
+                  <span>{link.label}</span>
+                </a>
+              </li>
+            )}
           </ul>
         </nav>
     )
