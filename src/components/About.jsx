@@ -1,7 +1,9 @@
+import style from "../styles/About.module.css"
+
 export function About () {
     return (
-        <section className="about-section" id="about">
-            <div className="about-title-section">
+        <section className={style.section} id="about">
+            <div className={style.aboutTitle}>
                 <h3>S O B R E</h3>
                 <h3>M Í</h3>    
             </div>

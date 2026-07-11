@@ -1,0 +1,20 @@
+@media (min-width: 992px) {
+  .app-container {
+    display: flex;
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+
+    & .app-hero {
+      width: 50%;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
+    }
+
+    & .app-main {
+      width: 50%;
+    }
+  }
+}

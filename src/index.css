@@ -82,112 +82,9 @@ a {
   }
 }
 
-.social-mediaContainer {
-  padding: 24px;
-
-  & .mediaIcon-list {
-    display: flex;
-    gap: 16px;
-  }
-}
-
-.pageNavigationContainer {
-  display: none;
-}
-
-.about-section {
-  padding: 24px;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-
-  & .about-title-section {
-    display: flex;
-    gap: 16px;
-  }
-
-  & p {
-    color: var(--muted-foreground);
-    line-height: 1.625;
-  }
-}
-
-.experience-container {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding: 24px;
-  text-align: left;
-
-  & .experienceCardContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 36px;
-
-    & .experience-data {
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-
-      & .experience-data-date {
-        font-size: 14px;
-      }
-
-      & .goal-container {
-        padding-left: 48px;
-        color: var(--muted-foreground);
-
-        & li {
-          font-size: 16px;
-        }
-      }
-
-      .tech-container {
-        margin-top: 12px;
-      }
-
-      & .experience-type, p {
-        color: var(--muted-foreground);
-      }
-    }
-  }
-}
-
 @media (min-width: 768px) {
   #root {
     padding: 36px;
-  }
-
-  .pageNavigationContainer {
-    display: none;
-  }
-
-  .experience-container {
-
-    & .experienceCardContainer {
-      
-      & .experience-data {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-
-        & .experience-data-date {
-          width: 60%;
-          font-size: 12px;    
-        }
-
-        & .experience-data-infoContainer {
-          display: flex;
-          flex-direction: column;
-          gap: 16px;
-
-          & ul {
-            padding-left: 16px;
-          }
-        } 
-      }
-    }
   }
 
   .skills-education-container {
@@ -199,39 +96,6 @@ a {
 @media (min-width: 992px) {
   #root {
     padding: 0;
-  }
-
-  .about-section {
-    margin-top: 48px;
-    padding: 0 0 0 18px;
-  }
-
-  .experience-container {
-    margin-top: 48px;
-    padding: 0 0 0 18px;
-  }
-
-  .app-container {
-    display: flex;
-    width: 100%;
-    max-width: 1080px;
-    margin: 0 auto;
-
-    & .app-hero {
-      width: 50%;
-      position: sticky;
-      top: 0;
-      height: 100vh;
-      overflow-y: auto;
-    }
-
-    & .app-main {
-      width: 50%;
-    }
-  }
-
-  .pageNavigationContainer {
-    display: block;
   }
 
   .skills-education-container {
