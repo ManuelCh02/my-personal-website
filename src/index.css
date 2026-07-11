@@ -82,10 +82,6 @@ a {
   }
 }
 
-.pageNavigationContainer {
-  display: none;
-}
-
 .experience-container {
   display: flex;
   flex-direction: column;
@@ -130,10 +126,6 @@ a {
 @media (min-width: 768px) {
   #root {
     padding: 36px;
-  }
-
-  .pageNavigationContainer {
-    display: none;
   }
 
   .experience-container {
@@ -196,10 +188,6 @@ a {
     & .app-main {
       width: 50%;
     }
-  }
-
-  .pageNavigationContainer {
-    display: block;
   }
 
   .skills-education-container {
